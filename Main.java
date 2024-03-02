@@ -7,9 +7,8 @@ public class Main {
     }
     public static float pengurangan(float nilai_1, float nilai_2) {
         return nilai_1 - nilai_2;}
-        public static float penjumlahan(float nilai_1, float nilai_2) {
-            return nilai_1 + nilai_2;
-        }
+
+
         public static float perkalian(float nilai_1, float nilai_2) {
             return nilai_1 * nilai_2;
     }
@@ -37,7 +36,7 @@ public class Main {
                     float hasil_penjumlahan = penjumlahan(nilai_1, nilai_2);
                     System.out.println("Hasil penjumlahan adalah " + hasil_penjumlahan);
                     break;
-                    case 2:
+                case 2:
                     System.out.println("Masukkan nilai ke-1: ");
                     float nilai_3 = scan.nextFloat();
                     System.out.println("Masukkan nilai ke-2: ");
@@ -45,14 +44,20 @@ public class Main {
                     float hasil_pengurangan = pengurangan(nilai_3, nilai_4);
                     System.out.println("Hasil pengurangan adalah " + hasil_pengurangan);
                     break;
-                    case 3:
+              
+
+                case 3:
+
                     System.out.println("Masukkan nilai ke-1: ");
                     float nilai_5 = scan.nextFloat();
                     System.out.println("Masukkan nilai ke-2: ");
                     float nilai_6 = scan.nextFloat();
                     float hasil_perkalian = perkalian(nilai_5, nilai_6);
                     System.out.println("Hasil perkalian adalah " + hasil_perkalian);
-                    break;
+
+                    break;   
+
+                   
             default:
                 System.out.println("Silahkan input angka yang ada di dalam menu");
             }
