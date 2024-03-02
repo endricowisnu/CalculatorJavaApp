@@ -9,9 +9,14 @@ public class Main {
         return nilai_1 - nilai_2;}
 
 
-        public static float perkalian(float nilai_1, float nilai_2) {
+    public static float perkalian(float nilai_1, float nilai_2) {
             return nilai_1 * nilai_2;
     }
+
+    public static float pembagian(float nilai_1, float nilai_2) {
+        return nilai_1 / nilai_2;
+    }
+
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
@@ -54,8 +59,22 @@ public class Main {
                     float nilai_6 = scan.nextFloat();
                     float hasil_perkalian = perkalian(nilai_5, nilai_6);
                     System.out.println("Hasil perkalian adalah " + hasil_perkalian);
+                    break;
+                
+                case 4:
+                    System.out.println("Masukkan nilai ke-1: ");
+                    float nilai_7 = scan.nextFloat();
+                    System.out.println("Masukkan nilai ke-2: ");
+                    float nilai_8 = scan.nextFloat();
+                    float hasil_pembagian = pembagian(nilai_7, nilai_8);
+                    System.out.println("Hasil pembagian adalah " + hasil_pembagian);
+                    break;
+                
+                case 5:
+                    System.out.println("Terima kasih. Sampai jumpa!");
+                    break;
 
-                    break;   
+                      
 
                    
             default:
