@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public static float penjumlahan(float nilai_1, float nilai_2) {
+        return nilai_1 + nilai_2;
+    }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        
+        Scanner scan = new Scanner(System.in);
         int menu;
 
         do{
@@ -14,18 +19,17 @@ public class Main {
             System.out.println("5. Keluar");
             System.out.println("Silahkan input menu pilihan anda:");
 
-            menu = scanner.nextInt();
-            if(menu == 1){
-
-            }else if(menu == 2){
-
-            }else if(menu == 3){
-
-            }else if(menu == 4){
-
-            }else if(menu == 5){
-
-            }else{
+            menu = scan.nextInt();
+            switch (menu) {
+                case 1:
+                    System.out.println("Masukkan nilai ke-1: ");
+                    float nilai_1 = scan.nextFloat();
+                    System.out.println("Masukkan nilai ke-2: ");
+                    float nilai_2 = scan.nextFloat();
+                    float hasil_penjumlahan = penjumlahan(nilai_1, nilai_2);
+                    System.out.println("Hasil penjumlahan adalah " + hasil_penjumlahan);
+                    break;
+            default:
                 System.out.println("Silahkan input angka yang ada di dalam menu");
             }
         }while(true);
